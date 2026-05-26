@@ -973,7 +973,7 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
    -------------------------------------------------------------------------- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 3.5rem;
 }
@@ -1030,6 +1030,7 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
 .skill-name-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -1037,6 +1038,19 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
 
 .skill-name {
     color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--border-color);
+    flex-shrink: 0;
 }
 
 .skill-percent {
