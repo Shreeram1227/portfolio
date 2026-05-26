@@ -973,9 +973,14 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
    -------------------------------------------------------------------------- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 3.5rem;
+}
+
+/* Languages card: 4th item sits centred in the second row */
+.skills-grid .skills-card:last-child {
+    grid-column: 2;
 }
 
 .skills-card {
@@ -1105,7 +1110,23 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
 
 @media (max-width: 992px) {
     .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-grid .skills-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
         grid-template-columns: 1fr;
+    }
+    .skills-grid .skills-card:last-child {
+        grid-column: 1;
+        max-width: 100%;
     }
 }
 
