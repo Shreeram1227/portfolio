@@ -1044,13 +1044,15 @@ body[data-theme="light"] .theme-toggle-btn .sun-icon {
 }
 
 .flag-icon {
-    width: 24px;
-    height: 16px;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
     object-fit: cover;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
     border: 1px solid var(--border-color);
     flex-shrink: 0;
+    vertical-align: middle;
 }
 
 .skill-percent {
